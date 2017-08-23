@@ -11,6 +11,7 @@ class AppVideoPlayer : public App
 	QJsonValue params;
 	QProcess *proc;
 	QString cmd;
+	QTimer *temp;
 public:
 	explicit AppVideoPlayer(QJsonValue params, QLayout *lay, QWidget *parent = 0);
 	~AppVideoPlayer();
@@ -22,6 +23,7 @@ public slots:
 	virtual void destroyUi();
 	virtual void load();
 	virtual void unload();
+	virtual void intermediateResult();
 
 private:
 
