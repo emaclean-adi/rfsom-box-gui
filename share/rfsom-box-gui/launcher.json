@@ -420,6 +420,13 @@
   },
   {
     "params": {
+      "cmd": "/usr/local/bin/get_gmap.sh"
+    },
+    "type": "video",
+    "name": "GPS Map"
+  },
+  {
+    "params": {
       "cmd": "mplayer -vf scale -zoom -xy 160 -nosound -vo fbdev -tv driver=v4l2:device=/dev/video0 tv://"
     },
     "type": "video",
