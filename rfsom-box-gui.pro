@@ -29,7 +29,9 @@ scripts.files += ./tun_tap/en_dds.sh
 scripts.files += ./tun_tap/en_dma.sh
 scripts.files += ./tun_tap/en_radio.sh
 scripts.files += ./tun_tap/restart_modem.sh
+scripts.files += ./tun_tap/restart_modem_gui.sh
 scripts.files += ./tun_tap/modemd
+
 
 share.path = $$INSTALL_LOCATION/share
 share.files = ./share/*
@@ -45,6 +47,7 @@ unix:permission.extra += chmod 777 $$INSTALL_LOCATION/bin/en_dds.sh;
 unix:permission.extra += chmod 777 $$INSTALL_LOCATION/bin/en_dma.sh;
 unix:permission.extra += chmod 777 $$INSTALL_LOCATION/bin/en_radio.sh;
 unix:permission.extra += chmod 777 $$INSTALL_LOCATION/bin/restart_modem.sh;
+unix:permission.extra += chmod 777 $$INSTALL_LOCATION/bin/restart_modem_gui.sh;
 unix:permission.extra += chmod 777 $$INSTALL_LOCATION/bin/modemd
 
 INSTALLS += target scripts share permission
