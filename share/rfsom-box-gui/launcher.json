@@ -506,7 +506,7 @@
 
   {
     "params": {
-      "cmd": "ip=$(cat /tmp/modem-ip);netcat -l $ip -p 440 | mplayer -vf scale -zoom -x 160 -y 128 -nosound -vo fbdev -cache 32 -"
+      "cmd": "ip=$(cat /tmp/modem-ip);netcat -l $ip -p 440 | mplayer -fps 20 -vf scale -zoom -x 160 -y 128 -nosound -vo fbdev -cache 32 -cache-min 1 -"
     },
     "type": "video",
     "name": "Play Stream"
